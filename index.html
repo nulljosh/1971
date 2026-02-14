@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WTF Happened in 1971?</title>
+    <meta name="description" content="Data visualization exploring the economic shift that began in 1971 when the US abandoned the gold standard.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 3px solid #ff4444;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #ff4444;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 10px rgba(255, 68, 68, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: #999;
+            margin-bottom: 2rem;
+        }
+
+        .year {
+            font-size: 6rem;
+            font-weight: 900;
+            color: #ff4444;
+            opacity: 0.3;
+            letter-spacing: 0.5rem;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .intro {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            border-left: 4px solid #ff4444;
+        }
+
+        .intro h2 {
+            color: #ff4444;
+            margin-bottom: 1rem;
+        }
+
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .chart-card {
+            background: #1a1a1a;
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #333;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .chart-card:hover {
+            transform: translateY(-5px);
+            border-color: #ff4444;
+        }
+
+        .chart-card h3 {
+            color: #ff4444;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .chart-card p {
+            color: #999;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .chart-placeholder {
+            background: #0a0a0a;
+            height: 200px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-style: italic;
+        }
+
+        .book-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+            border: 2px solid #ff4444;
+        }
+
+        .book-section h2 {
+            color: #ff4444;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .book-quote {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #ccc;
+            padding: 1.5rem;
+            border-left: 4px solid #ff4444;
+            background: #0a0a0a;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .key-points {
+            list-style: none;
+            margin-top: 2rem;
+        }
+
+        .key-points li {
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: #0a0a0a;
+            border-radius: 8px;
+            border-left: 3px solid #ff4444;
+        }
+
+        .key-points strong {
+            color: #ff4444;
+        }
+
+        footer {
+            background: #1a1a1a;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+            border-top: 2px solid #333;
+        }
+
+        footer a {
+            color: #ff4444;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .year {
+                font-size: 4rem;
+            }
+
+            .chart-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WTF Happened in 1971?</h1>
+        <p class="subtitle">When American prosperity broke</p>
+        <div class="year">1971</div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>The Year Everything Changed</h2>
+            <p>In August 1971, President Nixon ended the Bretton Woods system, severing the dollar's link to gold. This single decision unleashed a cascade of economic changes that fundamentally altered American life.</p>
+            <p><strong>The data speaks for itself:</strong> Nearly every chart measuring American prosperity shows a dramatic shift around 1971. Wages flatlined. Inequality soared. Housing became unaffordable. The American Dream began its slow death.</p>
+        </section>
+
+        <div class="chart-grid">
+            <div class="chart-card">
+                <h3>Productivity vs Wages</h3>
+                <p>Productivity continued rising, but wages stopped following</p>
+                <div class="chart-placeholder">Chart: Productivity up 77%, pay up 12%</div>
+            </div>
+
+            <div class="chart-card">
+                <h3>Income Inequality</h3>
+                <p>Top 1% income share exploded after 1971</p>
+                <div class="chart-placeholder">Chart: Top 1% share doubled</div>
+            </div>
+
+            <div class="chart-card">
+                <h3>Housing Affordability</h3>
+                <p>Median home price vs median income diverged</p>
+                <div class="chart-placeholder">Chart: Houses 2-3x less affordable</div>
+            </div>
+
+            <div class="chart-card">
+                <h3>Dollar Purchasing Power</h3>
+                <p>The dollar lost 85% of its value since 1971</p>
+                <div class="chart-placeholder">Chart: $1 then = $0.15 now</div>
+            </div>
+
+            <div class="chart-card">
+                <h3>National Debt</h3>
+                <p>Debt-to-GDP ratio skyrocketed</p>
+                <div class="chart-placeholder">Chart: Exponential growth</div>
+            </div>
+
+            <div class="chart-card">
+                <h3>Incarceration Rate</h3>
+                <p>Prison population increased 500%</p>
+                <div class="chart-placeholder">Chart: War on drugs era</div>
+            </div>
+        </div>
+
+        <section class="book-section">
+            <h2>A Generation of Sociopaths</h2>
+            <p>Bruce Cannon Gibney's controversial thesis: The Baby Boomer generation's self-serving policies created these trends.</p>
+
+            <div class="book-quote">
+                "The Boomers inherited a rich, dynamic country and have gradually bankrupted it. They habitually cut their own taxes and borrow money without any concern for future burdens. They've spent virtually all our money and assets on themselves and in the process have left a financial disaster for their children."
+            </div>
+
+            <ul class="key-points">
+                <li><strong>1971: Gold Standard Abandoned</strong> - Enabled unlimited money printing to fund present consumption at future expense</li>
+                <li><strong>1980s: Tax Cuts for Wealthy</strong> - Reagan-era policies shifted burden to working class while enriching top earners</li>
+                <li><strong>Deregulation</strong> - Removed guardrails that prevented corporate abuse and financial crises</li>
+                <li><strong>Student Debt Explosion</strong> - Made education unaffordable, saddling younger generations with debt Boomers never faced</li>
+                <li><strong>Environmental Neglect</strong> - Kicked climate costs down to children and grandchildren</li>
+            </ul>
+
+            <p style="margin-top: 2rem; color: #999;">The data suggests Gibney may have a point. Every major policy shift benefited Boomers at the expense of future generations. The charts don't lie.</p>
+        </section>
+
+        <section class="intro">
+            <h2>Why This Matters</h2>
+            <p>Understanding what happened in 1971 helps explain:</p>
+            <ul style="margin-top: 1rem; padding-left: 2rem;">
+                <li>Why millennials and Gen Z can't afford homes</li>
+                <li>Why wages feel stagnant despite "economic growth"</li>
+                <li>Why college is unaffordable</li>
+                <li>Why retirement seems impossible</li>
+                <li>Why political polarization has increased</li>
+            </ul>
+            <p style="margin-top: 1rem;"><strong>The data doesn't lie. Something fundamental changed in 1971.</strong></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Data sources: Federal Reserve, US Census, Bureau of Labor Statistics</p>
+        <p>Inspired by <a href="https://wtfhappenedin1971.com" target="_blank">WTFHappenedin1971.com</a> and "A Generation of Sociopaths" by Bruce Cannon Gibney</p>
+        <p style="margin-top: 1rem;">
+            <a href="https://github.com/nulljosh/1971" target="_blank">View on GitHub</a>
+        </p>
+    </footer>
+</body>
+</html>
