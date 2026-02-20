@@ -120,3 +120,69 @@ PRs welcome for:
 ## License
 
 MIT - Data is public domain, visualizations are open source
+
+## Project Map
+
+```svg
+<svg viewBox="0 0 680 420" width="680" height="420" xmlns="http://www.w3.org/2000/svg" style="font-family:monospace;background:#f8fafc;border-radius:12px">
+  <text x="340" y="28" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">1971 — Economic Shift Data Visualization</text>
+
+  <!-- Root node -->
+  <rect x="265" y="48" width="150" height="36" rx="8" fill="#0071e3"/>
+  <text x="340" y="70" text-anchor="middle" font-size="11" fill="white" font-weight="bold">1971/</text>
+
+  <!-- Dashed lines from root -->
+  <line x1="310" y1="84" x2="130" y2="150" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="330" y1="84" x2="290" y2="150" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="350" y1="84" x2="390" y2="150" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="370" y1="84" x2="550" y2="150" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- index.html -->
+  <rect x="40" y="150" width="180" height="36" rx="8" fill="#fbbf24"/>
+  <text x="130" y="168" text-anchor="middle" font-size="11" fill="#1e293b" font-weight="bold">index.html</text>
+  <text x="130" y="180" text-anchor="middle" font-size="9" fill="#64748b">main visualization page</text>
+
+  <!-- images/ -->
+  <rect x="230" y="150" width="120" height="36" rx="8" fill="#6366f1"/>
+  <text x="290" y="168" text-anchor="middle" font-size="11" fill="white" font-weight="bold">images/</text>
+  <text x="290" y="180" text-anchor="middle" font-size="9" fill="#e0e7ff">chart assets</text>
+
+  <!-- README + LICENSE -->
+  <rect x="360" y="150" width="120" height="36" rx="8" fill="#86efac"/>
+  <text x="420" y="168" text-anchor="middle" font-size="11" fill="#14532d">README.md</text>
+  <text x="420" y="180" text-anchor="middle" font-size="9" fill="#64748b">LICENSE</text>
+
+  <!-- architecture.svg -->
+  <rect x="490" y="150" width="130" height="36" rx="8" fill="#86efac"/>
+  <text x="555" y="168" text-anchor="middle" font-size="11" fill="#14532d">architecture.svg</text>
+  <text x="555" y="180" text-anchor="middle" font-size="9" fill="#64748b">project diagram</text>
+
+  <!-- Charts section -->
+  <text x="130" y="240" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e293b">Chart Categories</text>
+  <line x1="130" y1="186" x2="130" y2="255" stroke="#fbbf24" stroke-width="1.5"/>
+
+  <rect x="20" y="255" width="220" height="38" rx="6" fill="#fef3c7"/>
+  <text x="130" y="272" text-anchor="middle" font-size="10" fill="#92400e" font-weight="bold">Economics</text>
+  <text x="130" y="286" text-anchor="middle" font-size="9" fill="#64748b">Wage stagnation / income inequality</text>
+
+  <line x1="130" y1="293" x2="130" y2="310" stroke="#fbbf24" stroke-width="1.5"/>
+  <rect x="20" y="310" width="220" height="38" rx="6" fill="#fef3c7"/>
+  <text x="130" y="327" text-anchor="middle" font-size="10" fill="#92400e" font-weight="bold">Housing</text>
+  <text x="130" y="341" text-anchor="middle" font-size="9" fill="#64748b">Median home price vs income</text>
+
+  <line x1="130" y1="348" x2="130" y2="365" stroke="#fbbf24" stroke-width="1.5"/>
+  <rect x="20" y="365" width="220" height="38" rx="6" fill="#fef3c7"/>
+  <text x="130" y="382" text-anchor="middle" font-size="10" fill="#92400e" font-weight="bold">Monetary</text>
+  <text x="130" y="396" text-anchor="middle" font-size="9" fill="#64748b">Gold standard abandonment 1971</text>
+
+  <!-- Right: live site info -->
+  <rect x="290" y="255" width="370" height="155" rx="8" fill="#f1f5f9"/>
+  <text x="475" y="278" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">Deployment</text>
+  <text x="475" y="300" text-anchor="middle" font-size="10" fill="#475569">Live: nulljosh.github.io/1971</text>
+  <text x="475" y="320" text-anchor="middle" font-size="10" fill="#475569">GitHub Pages static hosting</text>
+  <text x="475" y="348" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">Stack</text>
+  <text x="475" y="368" text-anchor="middle" font-size="10" fill="#475569">Pure HTML / CSS / JavaScript</text>
+  <text x="475" y="388" text-anchor="middle" font-size="10" fill="#475569">Chart.js data visualizations</text>
+  <text x="475" y="406" text-anchor="middle" font-size="10" fill="#475569">No build step — single file</text>
+</svg>
+```
